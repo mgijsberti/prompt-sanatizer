@@ -39,7 +39,7 @@ jobs:
 
       - name: Install just
         run: |
-          curl -fsSL https://github.com/casey/just/releases/latest/download/just-x86_64-unknown-linux-musl.tar.gz | tar xz -C /usr/local/bin
+          cargo install just
 
       - name: Run Check
         run: just check
