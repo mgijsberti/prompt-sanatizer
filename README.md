@@ -1,13 +1,18 @@
-# Prompt Sanitizer CLI
+# Prompt Sanitizer
 
 A command-line utility for sanitizing LLM prompts against the top 10 OWASP prompt injection vulnerabilities.
+
+This is an learning experiment and not a solution you can use in production!
+
+The goal is to learn about OWASP top ten prompt injection vulnerabilities.
+See for futher reference: https://genai.owasp.org/llmrisk/llm01-prompt-injection/
+
 
 ## Features
 
 - **Comprehensive Protection**: Defends against 10 major OWASP LLM prompt injection attack vectors
 - **File-based Processing**: Reads prompts from files and outputs sanitized versions
 - **Verbose Mode**: Shows detailed information about what was filtered
-- **Safe Overwrite**: Prevents accidental file overwrites without explicit confirmation
 - **Async I/O**: Fast file processing with Tokio async runtime
 - **Full Test Coverage**: 26+ unit tests plus integration tests
 
